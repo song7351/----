@@ -29,6 +29,11 @@ class Human{
     String[] rand = {"국내선","국제선"};
     int i = (int)(Math.random()*2);
     String direction = rand[i];
+
+    Human(){
+        this.speed = speed;
+        this.direction = direction;
+    }
 }
 public class Q10{
     
