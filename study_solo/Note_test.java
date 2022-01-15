@@ -1,6 +1,5 @@
 package 두잇자바.study_solo;
 
-
 class Ani{
     public static void main(String[] args) {
         String a = "a";
@@ -12,6 +11,9 @@ class Ani{
         }else if(a == ""){
             System.out.println("2. 공백입니다.");
         }else{
+            System.out.println(a);
+            System.out.println(a.equals(""));
+            System.out.println(a instanceof String);
             System.out.println("3. 모르겠습니다.");
         }
 

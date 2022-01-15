@@ -20,25 +20,23 @@ class Song {
         new_id = new_id.replace("..", "."); //3단계
         }while(new_id.contains(".."));
         
+        // 4단계 new_id에서 마침표(.)가 처음이나 끝에 위치한다면 제거합니다.
         StringBuilder id = new StringBuilder(new_id);
-        if(new_id.charAt(0) == '.'){        //4단계
-            if(new_id.length() <2){
-                new_id = "";
-            }else{
+        if(new_id.equals("")){
+            new_id = "";
+        }else if(id.charAt(0) == '.'){
             id.deleteCharAt(0);
-            new_id = id.toString();}
-        }
-        
-        StringBuilder idd = new StringBuilder(new_id);
-        if(new_id.charAt(new_id.length()-1) == '.'){    //4단계
-            if(new_id.length() <2){
-                new_id = "";
-            }else{
-            idd.deleteCharAt(new_id.length()-1);
-            new_id = idd.toString();}
+            new_id = id.toString();
         }
 
-        if(new_id == ""){   //5단계
+        if(new_id.equals("")){
+            new_id = "";
+        }else if(id.charAt(new_id.length()-1) == '.'){
+            id.deleteCharAt(new_id.length()-1);
+            new_id = id.toString();
+        }
+
+        if(new_id.equals("")){   //5단계
             new_id = "a";
         }
         if(new_id.length() >15){    //6단계
