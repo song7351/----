@@ -1,7 +1,7 @@
 package 두잇자바.homework.Day09;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
+// import java.util.Date;
 import java.util.Scanner;
 import java.util.Arrays;
 // 과제4) Airplane 추상 클래스를 만들고 출발날짜과 도착날짜을 Calendar 객체로 받는 setter를 만드시오.
