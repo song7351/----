@@ -22,7 +22,7 @@ class Book {
     }
 
     public String toString() {
-        return String.format("%s %s %s %d %d %s", bookNo, bookTitle, bookAuthor, bookPrice, bookYear, bookPublisher);
+        return String.format("%s\t%s\t%s\t%d\t%d\t%s", bookNo, bookTitle, bookAuthor, bookPrice, bookYear, bookPublisher);
     }
 }
 
@@ -40,7 +40,7 @@ class Magazine extends Book {
     }
 
     public String toString() {
-        return String.format("%s %s %s %d %d %s %3d", bookNo, bookTitle, bookAuthor, bookPrice, bookYear, bookPublisher,
+        return String.format("%s\t%s \t%s\t%d\t%d\t%s\t%3d", bookNo, bookTitle, bookAuthor, bookPrice, bookYear, bookPublisher,
                 month);
     }
 
