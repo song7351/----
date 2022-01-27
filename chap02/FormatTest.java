@@ -10,7 +10,9 @@ public class FormatTest {
         // "%"%dd으로 변환, %d = 3, 결과 "%3d"
         //최종 = System.out.printf("%2d | %3d\n",3,4);
     
-        
+        String star = "";
+        String starP = star+"*";
+        System.out.println(starP);
     }
     
 }

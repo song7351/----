@@ -21,6 +21,6 @@ public class Q1152 {
         } else {
             System.out.println(0);
         }
-
+        s.close();
     }
 }
